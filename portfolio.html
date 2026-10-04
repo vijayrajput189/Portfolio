@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay | Software Test Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+        nav {
+            padding: 20px 0;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #94a3b8;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 72px);
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: clamp(20px, 3vw, 30px);
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #94a3b8;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-right: 10px;
+            border-radius: 8px;
+            background: #38bdf8;
+            color: #020617;
+            font-weight: bold;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 1px solid #334155;
+            color: #e2e8f0;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 32px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 10px 15px;
+            border-radius: 20px;
+            color: #cbd5e1;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        .tech {
+            margin-top: 15px;
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 800px;
+            color: #94a3b8;
+            font-size: 17px;
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            nav .container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 70vh;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .buttons .btn {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container">
+            <div class="logo">Vijay | QA</div>
+
+            <div>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+
+            <h1>Hi, I'm Vijay.</h1>
+
+            <h2>Software Test Engineer</h2>
+
+            <p>
+                QA Engineer focused on Manual Testing, SQL,
+                API Testing and Test Automation. Experienced in
+                financial, merchant and transaction-based applications.
+            </p>
+
+            <div class="buttons">
+                <a class="btn" href="#projects">View Projects</a>
+                <a class="btn secondary"
+                   href="https://github.com/YOUR_USERNAME"
+                   target="_blank">
+                    GitHub
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+
+            <h2 class="section-title">About Me</h2>
+
+            <p class="about">
+                I work across the complete testing lifecycle — from
+                understanding requirements and creating test scenarios
+                to UI testing, SQL validation, API testing and
+                automation. I enjoy investigating defects and validating
+                application behavior against backend data and business rules.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills">
+                <span class="skill">Manual Testing</span>
+                <span class="skill">Functional Testing</span>
+                <span class="skill">Regression Testing</span>
+                <span class="skill">UAT</span>
+                <span class="skill">SQL / MySQL</span>
+                <span class="skill">API Testing</span>
+                <span class="skill">Java</span>
+                <span class="skill">Selenium</span>
+                <span class="skill">TestNG</span>
+                <span class="skill">Maven</span>
+                <span class="skill">POM</span>
+                <span class="skill">Postman</span>
+                <span class="skill">Git</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+
+            <h2 class="section-title">Projects</h2>
+
+            <div class="projects">
+
+                <div class="card">
+                    <h3>DMT / Remittance</h3>
+                    <p>
+                        Functional, regression and end-to-end testing
+                        of sender registration, KYC and remittance
+                        workflows.
+                    </p>
+                    <div class="tech">
+                        Java · Selenium · TestNG · SQL · Postman
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>RM Field Visit</h3>
+                    <p>
+                        Tested RM hierarchy, visit management,
+                        activity visibility and location-based
+                        business rules.
+                    </p>
+                    <div class="tech">
+                        Manual Testing · SQL · Business Rules
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>POS Rental</h3>
+                    <p>
+                        Validated rental records, device mapping
+                        and sales calculation logic using database
+                        validation.
+                    </p>
+                    <div class="tech">
+                        SQL · MySQL · Data Validation
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>AFT & Wallet</h3>
+                    <p>
+                        Tested financial services, wallet transactions,
+                        service eligibility and backend transaction data.
+                    </p>
+                    <div class="tech">
+                        Manual Testing · API · SQL
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- AUTOMATION -->
+    <section>
+        <div class="container">
+
+            <h2 class="section-title">Automation</h2>
+
+            <p class="about">
+                Currently building a reusable Selenium automation framework
+                using Java, TestNG, Maven and Page Object Model.
+            </p>
+
+            <div class="skills" style="margin-top:20px;">
+                <span class="skill">Page Object Model</span>
+                <span class="skill">Driver Factory</span>
+                <span class="skill">Explicit Waits</span>
+                <span class="skill">Dynamic Test Data</span>
+                <span class="skill">Configuration</span>
+                <span class="skill">Screenshots</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+
+            <h2 class="section-title">Let's Connect</h2>
+
+            <p class="about">
+                Interested in QA, automation, testing or collaboration?
+            </p>
+
+            <div class="buttons">
+
+                <a class="btn"
+                   href="https://www.linkedin.com/in/YOUR_USERNAME"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a class="btn secondary"
+                   href="https://github.com/YOUR_USERNAME"
+                   target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        © 2026 Vijay · Software Test Engineer
+    </footer>
+
+</body>
+</html>
